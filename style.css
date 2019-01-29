@@ -507,6 +507,7 @@ transform: translateX(-50%);
   display: inline-block;
   width: 700px;
   text-align: center;
+  margin-bottom:80px;
 }
 
 #griglia .tit h2{
@@ -522,12 +523,37 @@ transform: translateX(-50%);
 #griglia .riga .cella{
   width: 25%;
   height: 184px;
-  background-color: coral;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   float:left;
   padding: 30px;
+  text-align: center;
 }
+
 #griglia .riga :last-child{
   border-right: none;
+}
+
+#griglia .riga .cella img{
+  margin-bottom: 10px;
+}
+
+#griglia .riga .cella h2{
+  display: inline-block;
+  font-size:40px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+#griglia .riga .cella .plus{
+  position:relative;
+  bottom:10px;
+}
+
+#griglia .riga .cella p{
+  font-size: 14px;
+}
+
+#griglia .tabella .riga:last-child .cella{
+  border-bottom: none;
 }
