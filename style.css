@@ -7,10 +7,14 @@
 
 a{
   text-decoration: none;
+  color:inherit;
 }
 
 ul{
   list-style: none;
+}
+p{
+  line-height: 1.75;
 }
 
 .container{
@@ -83,12 +87,16 @@ header .bar{
   height: 100%;
 }
 
-/* left */
-
-header .bar .left{
+header .bar > *{
   height: 100%;
   line-height: 60px;
   font-size: 13px;
+  color: white
+}
+
+/* left */
+
+header .bar .left{
   float: left;
 }
 
@@ -98,8 +106,8 @@ header .bar .left > *{
   height: 100%;
 }
 
-header  .left  .logo  img{
-  height: 50%;
+header    img{
+  height: 60%;
   vertical-align: middle;
 }
 
@@ -108,33 +116,20 @@ header  .left ul li{
   margin-right: 25px;
 }
 
-header  .left ul a{
-  color: white;
-}
-
 /* right */
 
 header .bar .right{
   float: right;
-  height: 100%;
-  line-height: 60px;
-  color: white;
 }
 
-header .bar .right .fas{
+header .bar .right .fa-search, header .bar .right .fa-cog{
+  font-size: 18px;
   margin-right: 20px;
 }
 
 header .bar .user {
-  height: 60%;
-  vertical-align: middle;
   margin-right: 5px;
 }
-
-header .bar .right span{
-  font-size: 13px;
-}
-
 
 /* STICKY NAV */
 
@@ -144,33 +139,32 @@ header .bar .right span{
   top:0;
   z-index: 2;
   border-bottom: 1px solid #cbd6e2;
+  cursor: pointer;
 }
 
 #stick .bar{
   height: 100%;
   line-height:73px;
+  font-size: 13px;
 }
 
 #stick .bar .left-bar{
   float: left;
-  font-size: 14px;
 }
 
 #stick .bar .right-bar{
   float: right;
-  font-size: 13px;
+  padding-right:8px;
 }
 
 /* left bar */
 
 #stick .left-bar > span{
   color: #33475b;
-  line-height: inherit;
   margin-right: 15px;
-  cursor: pointer;
 }
 
-#stick .left-bar  .fas{
+#stick .left-bar .fas{
   opacity: 0.7;
   font-size: 18px;
   margin-left: 10px;
@@ -178,12 +172,7 @@ header .bar .right span{
 
 #lang{
   padding-right: 15px;
-  border-right-width: 2px;
-  border-right-style: solid;
-  border-right-color: rgb(203, 214, 226);
-  display: inline-block;
-  margin-right: none;
-  padding-bottom: 5px;
+  border-right: 2px solid rgb(203, 214, 226);
 }
 
 #lang img{
@@ -194,51 +183,40 @@ header .bar .right span{
 }
 
 #numb{
-  margin: 0 15px 0 3px;
+  margin: 0 9px;
 }
 
 /* right bar */
 
-#stick ul{
-  list-style: none;
-  margin-right: 8px;
-}
-
 #stick ul > *{
   float:left;
   margin-left: 20px;
-  cursor: pointer;
 }
 
-#stick ul  img{
-height: 16px;
-}
-
-#stick .log{
-  color: #ff7a59;
+#stick .right-bar .button{
   padding:8px 15px;
   border: 1px solid #ff7a59;
   border-radius: 3px;
+}
+#stick .button.log{
+  color: #ff7a59;
   background-color: white;
 }
 
-#stick .log:hover{
+#stick .button.log:hover{
   background-color: #fff8f6;
 }
 
 #stick .get{
   color: white;
-  padding:8px 15px;
-  border: 1px solid #ff7a59;
   background-color: #ff7a59;
-  border-radius: 3px;
 }
 
 #stick .get:hover{
   background-color: #ff8f73;
 }
 
-#stick input.search {
+#stick  .right-bar input{
   background: url("img/search.webp") no-repeat scroll 2px 2px;
   background-size: 18px auto;
   border:none;
@@ -250,7 +228,7 @@ height: 16px;
   cursor: pointer;
 }
 
-#stick input.search:focus{
+#stick .right-bar input:focus{
   width: 165px;
   cursor: text;
 }
@@ -260,11 +238,8 @@ height: 16px;
 .dropdown{
   position: relative;
   display: inline-block;
-  line-height: 30px;
-  margin-right: 15px;
+  line-height: 45px;
   color: #33475b;
-  padding-bottom: 15px;
-  cursor: pointer;
 }
 
 .dropdown-content{
@@ -277,8 +252,6 @@ height: 16px;
   border: 1px solid #CBD6E2;
   border-radius: 3px;
   box-shadow: 0 0 11px #BEADF4;
-  line-height: 1;
-  z-index: 2;
 }
 
 .dropdown:hover .dropdown-content{
@@ -286,13 +259,9 @@ height: 16px;
 }
 
 .dropItem{
-  display: block;
   height: 28px;
   line-height: 28px;
-  text-align: left;
-  padding-left: 15px;
-  padding-right: 30px;
-  cursor: pointer;
+  padding: 0 30px 0 15px;
 }
 
 .dropItem:hover{
@@ -320,10 +289,6 @@ height: 16px;
   height:82px;
 }
 
-#fissa{
-  height:82px;
-}
-
 #fissa .bar{
   height: 100%;
   position: relative;
@@ -344,7 +309,6 @@ height: 16px;
 }
 
 #fissa ul.menu{
-  list-style: none;
   float: right;
   margin-right: 10px;
   position: relative;
@@ -354,7 +318,6 @@ height: 16px;
 
 #fissa  ul.menu > .listItem{
   float: left;
-  cursor: pointer;
   height: 50px;
   line-height: 50px;
   margin-left: 30px;
@@ -367,7 +330,7 @@ height: 16px;
 
 #fissa ul.menu  li a .fas{
   margin-left: 10px;
-  color:#7c98b6;
+  color: #7c98b6;
   opacity: 0.5;
   font-size: 20px;
   position:relative;
@@ -495,7 +458,6 @@ text-align: left;
 .partners{
   width: 700px;
   padding: 30px 15px;
-  line-height: 1.75;
 }
 
 .partners .pointer{
@@ -578,11 +540,6 @@ text-align: left;
   font-weight: 900
 }
 
-#hero1 p{
-  line-height: 1.75;
-  font-weight: 400;
-}
-
 .gh-button{
   display: inline-block;
   padding: 26px 48px;
@@ -600,7 +557,6 @@ text-align: left;
 #hero1 span{
   display: block;
   font-size: 12px;
-  font-weight: 400;
   color: #cbd6e2;
   width: 150px;
 }
@@ -635,7 +591,6 @@ text-align: left;
 
 #powerful .container > p{
   line-height: 1.5;
-  font-weight: 400;
 }
 
 /* ALL WHITE DIVS */
@@ -664,10 +619,6 @@ text-align: left;
 
 #powerful .lm-button:hover{
   background-color: #ff8f73;
-}
-
-.checklist{
-  list-style: none;
 }
 
 .check{
@@ -803,7 +754,7 @@ text-align: left;
 }
 
 #powerful .row .col .text{
-  height: 30%;
+  height: 27%;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -819,7 +770,7 @@ text-align: left;
 }
 
 #powerful .row .col .list{
-  height: 40%;
+  height: 43%;
   padding-top: 25px;
   position: relative;
 }
@@ -881,10 +832,6 @@ text-align: left;
   margin-bottom: 20px;
 }
 
-#griglia .tit p{
-  line-height: 1.75;
-}
-
 #griglia .riga .cella{
   width: 25%;
   height: 184px;
@@ -944,8 +891,6 @@ text-align: left;
 
 #costumers .left p{
   font-size: 19px;
-  font-weight: 400;
-  line-height: 1.75;
 }
 
 #costumers .logos{
@@ -987,7 +932,6 @@ text-align: left;
 
 #grow .left p{
   font-size: 16px;
-  line-height: 1.75;
 }
 
 #grow .gh-button{
@@ -1007,7 +951,6 @@ text-align: left;
 #grow .right{
   float:right;
 }
-
 
 /* FOOTER */
 
@@ -1083,12 +1026,10 @@ footer .lists .column .fab{
 }
 
 .lingue ul{
-  list-style: none;
   display: inline-block;
 }
 
 .lingue ul li{
-  list-style: none;
   float: left;
   margin: 0 15px;
 }
