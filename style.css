@@ -326,7 +326,6 @@ height: 16px;
 
 #fissa .bar{
   height: 100%;
-  /* line-height:50px; */
   position: relative;
   z-index: 1;
 }
@@ -337,6 +336,7 @@ height: 16px;
   position: relative;
   float: left;
 }
+
 #fissa .image img{
   position: absolute;
   top:50%;
@@ -389,7 +389,6 @@ height: 16px;
   position: absolute;
   top:50px;
   background-color: white;
-
   right:0;
   border: 1px solid #CBD6E2;
   border-radius: 3px;
@@ -404,10 +403,14 @@ height: 16px;
   background-color: #E5F5F8;
 }
 
+.menu .drop-contain .content p{
+  font-size: 14px;
+  margin-top: 15px;
+}
+
 /* software dropdown */
 
 .menu .drop-contain .software{
-  /* display: none; */
   width: 725px;
   line-height: 1;
   padding: 10px 30px;
@@ -424,11 +427,6 @@ height: 16px;
 
 .software .row:last-child{
   border-bottom: none;
-}
-
-.software .row p{
-  font-size: 14px;
-  margin-top: 15px;
 }
 
 .software .row .item{
@@ -492,6 +490,61 @@ text-align: left;
   font-size: 14px;
 }
 
+/* PARTNERS dropdown */
+
+.partners{
+  width: 700px;
+  padding: 30px 15px;
+  line-height: 1.75;
+}
+
+.partners .pointer{
+  right: 95px;
+}
+
+.partners div.item{
+  width: 47.5%;
+  padding:15px;
+  float: left;
+}
+
+.partners .item:last-child {
+  margin-left: 5%;
+}
+
+/* ABOUT dropdown */
+
+#lastItem{
+  width: 600px;
+  padding: 30px;
+  right:-20px;
+}
+
+.about .pointer{
+  right:18px;
+}
+
+.about h3{
+  margin-bottom:15px;
+  padding-left: 10px;
+}
+
+.about ul{
+  line-height:1;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.about ul:last-child{
+  margin-right: 0;
+}
+
+.about li{
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
 /* HERO 1 */
 
 #hero1{
@@ -540,7 +593,7 @@ text-align: left;
   cursor: pointer;
 }
 
- .gh-button:hover{
+.gh-button:hover{
   background-color: rgba(255,255,255,0.9);
 }
 
@@ -562,6 +615,7 @@ text-align: left;
 #powerful  .container{
   width: 960px;
 }
+
 #powerful .tit {
   text-align: center;
   padding: 0 10%;
@@ -683,7 +737,6 @@ text-align: left;
   padding-top:30px;
 }
 
-
 #powerful h4{
   font-size: 1.375rem;
   font-weight: 700;
@@ -728,13 +781,13 @@ text-align: left;
   height: 592px;
   color:#33475b;
 }
+
 #powerful .row >*{
   float: left;
   height: 592px;
   width: 31%;
   padding:30px;
 }
-
 
 #powerful .row .col.center{
   margin: 0 3.5%;
@@ -977,6 +1030,7 @@ footer a:hover, footer .lists .column .fab:hover{
 footer .lists{
   margin-bottom: 70px;
 }
+
 footer .lists .column{
   width: 25%;
   float: left;
@@ -992,6 +1046,7 @@ footer .lists .column h3{
 footer .lists .column ul li{
   margin-bottom: 20px;
 }
+
 footer .lists .column ul li a{
   font-size: 14px;
 }
@@ -1026,6 +1081,7 @@ footer .lists .column .fab{
   text-align: center;
   margin-bottom: 40px;
 }
+
 .lingue ul{
   list-style: none;
   display: inline-block;
