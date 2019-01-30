@@ -194,8 +194,6 @@ header .bar .right span{
 }
 
 #numb{
-  /* padding-right: 20px;
-  padding: 10px 0; */
   margin: 0 15px 0 3px;
 }
 
@@ -280,6 +278,7 @@ height: 16px;
   border-radius: 3px;
   box-shadow: 0 0 11px #BEADF4;
   line-height: 1;
+  z-index: 2;
 }
 
 .dropdown:hover .dropdown-content{
@@ -315,7 +314,7 @@ height: 16px;
   border-bottom: none;
 }
 
-/* NAV FISSA */
+/* NAV BIANCA FISSA */
 
 #fissa{
   height:82px;
@@ -327,7 +326,9 @@ height: 16px;
 
 #fissa .bar{
   height: 100%;
-  line-height:82px;
+  /* line-height:50px; */
+  position: relative;
+  z-index: 1;
 }
 
 #fissa .image{
@@ -340,27 +341,31 @@ height: 16px;
   position: absolute;
   top:50%;
   transform: translateY(-50%);
-
 }
 
 #fissa ul{
   list-style: none;
   float: right;
   margin-right: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-#fissa ul > li{
-  margin-left: 30px;
+#fissa ul > .listItem{
   float: left;
-  font-weight: bold;
   cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 30px;
 }
 
-#fissa ul > li a {
+#fissa ul  li > a{
+  font-weight: bold;
   color: #33475b;
 }
 
-#fissa ul > li a .fas{
+#fissa ul  li a .fas{
   margin-left: 10px;
   color:##7c98b6;
   opacity: 0.5;
@@ -368,6 +373,92 @@ height: 16px;
   position:relative;
   top: 2px;
 }
+
+/* dropdown */
+
+ul .drop-contain{
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  color: #33475b;
+}
+
+ul .drop-contain .content{
+  display: none;
+  position: absolute;
+  top:50px;
+  background-color: white;
+  padding: 10px 30px;
+  right:0;
+  border: 1px solid #CBD6E2;
+  border-radius: 3px;
+  box-shadow: 0 0 11px #BEADF4;
+}
+
+ul .drop-contain:hover .content{
+  display: block;
+}
+
+ul .drop-contain .content .item:hover{
+  background-color: #E5F5F8;
+}
+
+/* software dropdown */
+
+ul .drop-contain .software{
+  /* display: none; */
+  width: 725px;
+  line-height: 1;
+}
+
+ul .drop-contain .software .pointer{
+  right:416px;
+}
+
+.software .row{
+  padding: 20px 0;
+  border-bottom: 1px solid #cbd6e2;
+}
+
+.software .row:last-child{
+  border-bottom: none;
+}
+
+.software .row p{
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.software .row .item{
+  padding: 15px;
+}
+
+/* row one */
+
+.software .row.one{
+  text-align: center;
+}
+
+/* row two */
+
+.software .row.two {
+text-align: left;
+}
+
+.software .row.two div{
+  float:left;
+  width: 200px;
+  margin-left: 20px;
+}
+
+/* row three */
+
+.software .row.three h3{
+  display: inline-block;
+  margin: 0 10px;
+}
+
 
 /* HERO 1 */
 
