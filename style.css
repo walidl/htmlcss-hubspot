@@ -214,7 +214,6 @@ header .bar .right span{
 
 #stick ul  img{
 height: 16px;
-
 }
 
 #stick .log{
@@ -263,7 +262,7 @@ height: 16px;
 .dropdown{
   position: relative;
   display: inline-block;
-  line-height: 1;
+  line-height: 30px;
   margin-right: 15px;
   color: #33475b;
   padding-bottom: 15px;
@@ -305,7 +304,6 @@ height: 16px;
   width: 15px;
   height: 15px;
   display: inline-block;
-  background-color: red;
   position: absolute;
   top:-8px;
   right:15px;
@@ -377,19 +375,21 @@ height: 16px;
   height: 647px;
   color:white;
   position:relative;
+  background-image: url("img/hero2.png");
+  background-position: left;
+  background-size: cover;
 }
 
-#hero1 >img{
-  height:100%;
+#hero1 .casette{
+  width: 100%;
   position: absolute;
-  z-index: -1;
-  max-width: 1349px;
+  bottom: 0;
 }
 
 #hero1 .container > div{
   width: 40%;
-  position:relative;
-  top:37%;
+  position:absolute;
+  top:50%;
   transform:translateY(-50%);
 }
 
@@ -677,6 +677,9 @@ height: 16px;
   position: relative;
   height: 885px;
   color:white;
+  background-image: url("img/griglia.png");
+  background-position: left;
+  background-size: cover;
 }
 
 #griglia .container{
