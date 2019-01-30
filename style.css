@@ -343,7 +343,7 @@ height: 16px;
   transform: translateY(-50%);
 }
 
-#fissa ul{
+#fissa ul.menu{
   list-style: none;
   float: right;
   margin-right: 10px;
@@ -352,7 +352,7 @@ height: 16px;
   transform: translateY(-50%);
 }
 
-#fissa ul > .listItem{
+#fissa  ul.menu > .listItem{
   float: left;
   cursor: pointer;
   height: 50px;
@@ -360,14 +360,14 @@ height: 16px;
   margin-left: 30px;
 }
 
-#fissa ul  li > a{
+#fissa ul.menu  li > a{
   font-weight: bold;
   color: #33475b;
 }
 
-#fissa ul  li a .fas{
+#fissa ul.menu  li a .fas{
   margin-left: 10px;
-  color:##7c98b6;
+  color:#7c98b6;
   opacity: 0.5;
   font-size: 20px;
   position:relative;
@@ -376,7 +376,7 @@ height: 16px;
 
 /* dropdown */
 
-ul .drop-contain{
+.menu .drop-contain{
   cursor: pointer;
   display: inline-block;
   height: 50px;
@@ -384,35 +384,36 @@ ul .drop-contain{
   color: #33475b;
 }
 
-ul .drop-contain .content{
+.menu .drop-contain .content{
   display: none;
   position: absolute;
   top:50px;
   background-color: white;
-  padding: 10px 30px;
+
   right:0;
   border: 1px solid #CBD6E2;
   border-radius: 3px;
   box-shadow: 0 0 11px #BEADF4;
 }
 
-ul .drop-contain:hover .content{
+.menu .drop-contain:hover .content{
   display: block;
 }
 
-ul .drop-contain .content .item:hover{
+.menu .drop-contain .content .item:hover{
   background-color: #E5F5F8;
 }
 
 /* software dropdown */
 
-ul .drop-contain .software{
+.menu .drop-contain .software{
   /* display: none; */
   width: 725px;
   line-height: 1;
+  padding: 10px 30px;
 }
 
-ul .drop-contain .software .pointer{
+.menu .drop-contain .software .pointer{
   right:416px;
 }
 
@@ -459,6 +460,37 @@ text-align: left;
   margin: 0 10px;
 }
 
+/* RESOURCES dropdown */
+
+.resources{
+  width: 600px;
+  padding: 30px;
+}
+
+.resources .pointer{
+  right:210px;
+}
+
+.resources h3{
+  margin-bottom:15px;
+  padding-left: 10px;
+}
+
+.resources ul{
+  line-height:1;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.resources ul:last-child{
+  margin-right: 0;
+}
+
+.resources li{
+  padding: 10px 15px;
+  font-size: 14px;
+}
 
 /* HERO 1 */
 
