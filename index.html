@@ -5,15 +5,21 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>HubSpot - Home</title>
   </head>
   <body>
 
+    <!-- CHATBOX -->
 
+    <div class="chatbox">
+      <img src="img/launcher-open-icon.svg" alt="">
+    </div>
 
     <div class="justbecause" background="grey">
-
     </div>
+
+    <!-- HEADER -->
+
     <header>
       <div class="bar clear">
         <div class="left">
@@ -29,7 +35,6 @@
             <li><a href="">Automation &nbsp;<i class="fas fa-angle-down"></i></a> </li>
             <li><a href="">Reports &nbsp;<i class="fas fa-angle-down"></i></a> </li>
           </ul>
-
         </div>
         <div class="right">
           <i class="fas fa-search"></i>
@@ -46,12 +51,35 @@
       <div class="container">
         <div class="bar clear">
           <div class="left-bar">
-            <span id="lang">
-              <img src="img/lang.svg">&nbsp; English &nbsp;<i class="fas fa-caret-down"></i>
-            </span>
-            <span id="numb">
+            <div class="dropdown">
+              <span id="lang">
+                <img src="img/lang.svg">&nbsp; English &nbsp;<i class="fas fa-caret-down"></i>
+              </span>
+              <div class="dropdown-content">
+                <div class="pointer">
+                </div>
+                <div class="dropItem">日本語</div>
+                <div class="dropItem">Deutsch </div>
+                <div class="dropItem">English</div>
+                <div class="dropItem">Español</div>
+                <div class="dropItem">Português</div>
+                <div class="dropItem">Français</div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <span id="numb">
+                Sales: +353 1 512 4400 &nbsp;<i class="fas fa-caret-down"></i>
+              </span>
+              <div class="dropdown-content">
+                <div class="pointer">
+                </div>
+                <div class="dropItem">Main +1 888 482 7768  </div>
+                <div class="dropItem">All numbers & location </div>
+              </div>
+            </div>
+            <!-- <span id="numb">
               Sales: +353 1 512 4400 &nbsp;<i class="fas fa-caret-down"></i>
-            </span>
+            </span> -->
           </div>
           <div class="right-bar">
             <ul class="clear">
@@ -63,7 +91,7 @@
         </div>
       </div>
     </nav>
-    
+
     <!-- NAV FISSA -->
 
     <nav id="fissa" background="white">
@@ -388,7 +416,7 @@
           <li><a href="">Eglish</a></li>
           <li><a href="">Deutsch</a></li>
           <li><a href="">日本語</a></li>
-          <li><a href="">Espanol</a></li>
+          <li><a href="">Español</a></li>
           <li><a href="">Português</a></li>
           <li><a href="">Français</a></li>
         </ul>
