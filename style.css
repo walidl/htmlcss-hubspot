@@ -272,15 +272,15 @@ header .bar .user {
   width: 15px;
   height: 15px;
   display: inline-block;
-  position: absolute;
-  top:-8px;
-  right:15px;
-  transform: rotate(45deg);
   background-color: white;
   border: 1px solid #CBD6E2;
   border-top-left-radius: 3px;
   border-right:none;
   border-bottom: none;
+  transform: rotate(45deg);
+  position: absolute;
+  top:-8px;
+  right:15px;
 }
 
 /* NAV BIANCA FISSA */
@@ -352,7 +352,7 @@ header .bar .user {
   position: absolute;
   top:50px;
   background-color: white;
-  right:0;
+  right:-20px;
   border: 1px solid #CBD6E2;
   border-radius: 3px;
   box-shadow: 0 0 11px #BEADF4;
@@ -380,7 +380,7 @@ header .bar .user {
 }
 
 .menu .drop-contain .software .pointer{
-  right:416px;
+  right:436px;
 }
 
 .software .row{
@@ -429,7 +429,7 @@ text-align: left;
 }
 
 .resources .pointer{
-  right:210px;
+  right:230px;
 }
 
 .resources h3{
@@ -461,7 +461,7 @@ text-align: left;
 }
 
 .partners .pointer{
-  right: 95px;
+  right: 115px;
 }
 
 .partners div.item{
@@ -476,10 +476,9 @@ text-align: left;
 
 /* ABOUT dropdown */
 
-#lastItem{
+.about{
   width: 600px;
   padding: 30px;
-  right:-20px;
 }
 
 .about .pointer{
@@ -716,7 +715,7 @@ text-align: left;
   height: 5px;
   margin-left: 10px;
   border-bottom: 1px solid #e0e6ed;
-  top: 4px;
+  top: 8px;
   width: 65%;
 }
 
