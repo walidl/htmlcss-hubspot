@@ -218,7 +218,7 @@ header .bar .user {
 
 #stick  .right-bar input{
   background: url("img/search.webp") no-repeat scroll 2px 2px;
-  background-size: 18px auto;
+  background-size: 24px auto;
   border:none;
   padding-left:24px;
   width:18px;
